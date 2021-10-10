@@ -1,20 +1,27 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 
-## Setup Instrucion
+## Installation
 
-First download the master repository from git and move it into your Apache server.
+Download the project and move it into your Apache server.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+1. First you have to create a database name 'gtl_meetings'.
+2. Then open command prompt and change directory to your project folder.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+example:
+```sh
+cd D:\Program Files\XAMPP\htdocs\gtl_assesment\myapp
+```
 
-## Learning Laravel
+3. Then run below command to migrate the database.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to
+```sh
+php artisan migrate
+```
+4. Run 'php artisan serve' to run server
+```sh
+php artisan serve
+```
+5. Server is run on 'http://127.0.0.1:8000' server and you can check the api by accessing 'http://127.0.0.1:8000/api/v1/runner/3/form-data' this URL.
+
+
